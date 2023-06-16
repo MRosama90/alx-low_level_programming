@@ -2,8 +2,10 @@
 
 /**
  * main - Entry Point
+ *
  * Description: print alphabet in lowercase then uppercase
- * return: always  0 (success)
+ *
+ * Return: Always 0 (success)
 */
 
 int main(void)
@@ -24,5 +26,6 @@ int main(void)
 		CH++;
 	}
 	putchar('\n');
+
 	return (0);
 }

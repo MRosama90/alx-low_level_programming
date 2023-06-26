@@ -6,7 +6,7 @@
  * Description: if odd number of charachter, print (length -1) / s
 */
 
-void puts_haf(char *str)
+void puts_half(char *str)
 {
 	int i;
 

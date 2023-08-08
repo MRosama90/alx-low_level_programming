@@ -4,7 +4,7 @@
 /**
  * _strlen - asdas
  * @s: asda
- * Rerturn: asda
+ * Return: asda
  */
 
 int _strlen(char *s)

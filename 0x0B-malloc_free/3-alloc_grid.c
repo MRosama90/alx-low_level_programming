@@ -1,5 +1,5 @@
 #include "main.h"
-#include <strdlib.h>
+#include <stdlib.h>
 
 /**
  * **alloc_grid - asdasd

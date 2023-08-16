@@ -36,17 +36,6 @@ int op_mod(int a, int b)
         return (a % b);
 }
 
-/**
- * op_add - asdasd
- * @a: asdasd
- * @b: asdasd
- * Return: asdas
- */
-
-int op_add(int a, int b)
-{
-        return (a + b);
-}
 
 /**
  * op_div - asdasd
@@ -58,4 +47,16 @@ int op_add(int a, int b)
 int op_div(int a, int b)
 {
         return (a / b);
+}
+
+/**
+ * op_mul - asdasd
+ * @a: asdasd
+ * @b: asdasd
+ * Return: asdas
+ */
+
+int op_mul(int a, int b)
+{
+        return (a * b);
 }

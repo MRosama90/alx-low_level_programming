@@ -34,7 +34,7 @@ void format_float(char *separator, va_list ap)
 }
 
 /**
- * format_char - asdasd
+ * format_string - asdasd
  * @separator: adasd
  * @ap: adasd
  */

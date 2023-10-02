@@ -25,12 +25,14 @@ int main(int ac, char **av)
 	if (from_a == -1)
 		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
 	to_a = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
-	if (from_a == -1)
+	if (to_a == -1)
 		dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 
 	while ((b = read(from_a, buf, READ_BUF_SIZE)) > 0)
 		if (write(to_a, buf, b) != b)
 			dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
+	if (b == -1)
+		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
 
 	from_a = close(from_a);
 	to_a = close(to_a);

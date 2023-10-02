@@ -32,11 +32,11 @@ int create_file(const char *filename, char *text_content)
 
 	if (!filename)
 		return (-1);
-	a = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_TRUSR | S_IWUSR);
+	a = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 	if (a == -1)
 		return (-1);
 	if (l)
 		b = write(a, text_content, l);
 	close(a);
-	return (b == len ? 1 : -1);
+	return (b == l ? 1 : -1);
 }

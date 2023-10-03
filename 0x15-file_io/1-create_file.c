@@ -1,24 +1,6 @@
 #include "main.h"
 
 /**
- * _strlen - asdasd
- * @s: asdasd
- * Return: asdasd
- */
-
-int _strlen(char *s)
-{
-	int x = 0;
-
-	if (!s)
-		return (0);
-
-	while (*s++)
-		x++;
-	return (x);
-}
-
-/**
  * create_file - asdasd
  * @filename: asdasd
  * @text_content: asdasd
